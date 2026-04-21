@@ -1,4 +1,4 @@
-# 01- Phloem_and_seed_composition
+# Phloem metabolites and soybean seed composition
 
 Analysis of the relationship between phloem-delivered metabolites and seed quality parameters in contrasting soybean genotypes.
 
