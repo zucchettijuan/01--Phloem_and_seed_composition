@@ -16,6 +16,8 @@ Soybean seed composition (protein and oil content) is largely determined by the 
 
 -   Metabolite names anonymized pending publication
 
+Note: data/ folder not included pending publication.
+
 ### Analysis
 
 -   Pearson correlations between phloem metabolites and seed composition variables
@@ -24,16 +26,6 @@ Soybean seed composition (protein and oil content) is largely determined by the 
 
 -   Top correlations extracted per composition variable
 
-### Repository structure
-
-Phloem_and_seed_composition/
-|- outputs/figures/       ← exported heatmaps (PNG)
-|- outputs/tables/        ← top correlation tables (CSV)
-|- R/                     ← analysis scripts
-|- report.qmd             ← Quarto report
-|- report.pdf             ← rendered report
-
-Note: data/ folder not included pending publication.
 
 ### Tools
 
