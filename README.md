@@ -27,11 +27,13 @@ Soybean seed composition (protein and oil content) is largely determined by the 
 ### Repository structure
 
 Phloem_and_seed_composition/
-├── data/processed/ ← normalized input data
-├── outputs/figures/ ← exported heatmaps (PNG)
-├── outputs/tables/ ← top correlation tables (CSV)
-├── R/ ← analysis scripts
-└── report.qmd ← Quarto report
+├── outputs/figures/       ← exported heatmaps (PNG)
+├── outputs/tables/        ← top correlation tables (CSV)
+├── R/                     ← analysis scripts
+├── report.qmd             ← Quarto report
+└── report.pdf             ← rendered report
+
+Note: data/ folder not included pending publication.
 
 ### Tools
 
