@@ -26,10 +26,11 @@ Note: data/ folder not included pending publication.
 
 -   Top correlations extracted per composition variable
 
+-   ROC analysis to identify metabolites with discriminatory power between high and low protein genotypes
 
 ### Tools
 
-R · tidyverse · pheatmap · RColorBrewer · Quarto · MetaboAnalyst
+R · tidyverse · pheatmap · RColorBrewer · pROC ·Quarto · MetaboAnalyst
 
 ### Status
 
