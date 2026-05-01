@@ -76,3 +76,10 @@ roc_analysis(r6_roc,
              predictors_var,
              response_var)
 
+png("outputs/figures/ROC_R5.png", width = 800, height = 600, res = 120)
+roc_analysis(r5_roc, predictors_var, response_var)
+dev.off()
+
+png("outputs/figures/ROC_R6.png", width = 800, height = 600, res = 120)
+roc_analysis(r6_roc, predictors_var, response_var)
+dev.off()
