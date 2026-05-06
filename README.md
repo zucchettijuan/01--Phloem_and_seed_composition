@@ -1,50 +1,65 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
 # Phloem metabolites and soybean seed composition
 
-Analysis of the relationship between phloem-delivered metabolites and seed quality parameters in contrasting soybean genotypes.
+## Objective
 
+Identify phloem metabolites associated with final seed protein and oil
+content in soybean, with potential application for early prediction of
+grain quality traits in breeding programs
 
-### Biological background
+## Context
 
-Soybean seed composition (protein and oil content) is largely determined by the supply of nutrients delivered to the embryo via phloem. This project explores correlations between phloem metabolitesmeasured at two developmental stages (R5 and R6) and the final protein and oil composition of mature seeds across six contrasting genotypes.
+Seed composition in soybean is strongly influenced by carbon and
+nitrogen supply during grain filling. This study evaluates whether
+phloem metabolite profiles at key developmental stages (R5 and R6) can
+be used to anticipate final seed protein and oil content across
+contrasting genotypes.
 
 ### Data
 
--   Phloem metabolites (GC-MS): 6 genotypes × 2 developmental stages (R5, R6) × 3 biological replicates
-
--   Data normalized and imputed in MetaboAnalyst (KNN imputation, square root transformation, auto scaling)
-
--   Seed composition: protein concentration and content measured by Kjeldahl in mature seeds
-
--   Metabolite identities have been anonymized due to data confidentiality. The analytical workflow and statistical structure remain unchanged.
-
-Note: data/ folder not included pending publication.
+-   Phloem metabolomics (GC-MS): 6 genotypes × 2 stages (R5, R6) × 3
+    replicates
+-   Seed composition (mature grains): protein and oil content
+    (Kjeldahl-based measurements)
+-   Metabolite features anonymized (structure preserved for analysis)
 
 ### Analysis
 
--   Pearson correlations between phloem metabolites and seed composition variables
-
--   Heatmap visualization with significance threshold (\|r\| \> 0.5, p \< 0.05)
-
--   Top correlations extracted per composition variable
-
--   ROC analysis to identify metabolites with discriminatory power between high and low protein genotypes
+-   Data preprocessing: KNN imputation, square-root transformation,
+    autoscaling (MetaboAnalyst)
+-   Correlation analysis between metabolites and seed traits (protein,
+    oil)
+-   Feature prioritization based on correlation strength and statistical
+    significance
+-   Discriminatory analysis (ROC) to evaluate ability of metabolites to
+    separate high vs low protein genotypes
 
 ## Conclusions
 
-Phloem metabolite levels at both R5 and R6 developmental stages showed 
-significant correlations with final seed composition parameters, suggesting 
-that the supply of nutrients delivered to the embryo via phloem partially 
-explains the variation in protein and oil content observed across genotypes.
+-   Several phloem metabolites showed strong association with final seed
+    composition traits
+-   Protein content and protein concentration behaved as partially
+    independent traits, with distinct metabolic associations
+-   Met_12 (R5) and Met_01 (R6) showed highest discriminatory power
+    between high and low protein genotypes
+-   Early-stage phloem profiles contain predictive signal of final grain
+    composition
 
-A key finding is that protein concentration and protein content per seed 
-are related but not equivalent traits — different metabolites correlate 
-with each parameter independently, highlighting the importance of analyzing 
-both parameters separately in breeding programs.
+## Applied value
 
-ROC analysis identified met_12 and met_01 as the metabolites with the 
-highest discriminatory power between high and low protein genotypes at 
-R5 and R6 stages respectively, suggesting these metabolites as potential 
-early indicators of seed protein accumulation.
+Phloem metabolite profiles during grain filling contain measurable
+signals linked to final seed quality. Specific metabolites may serve as
+early indicators of protein accumulation differences across genotypes,
+with potential utility for:
+
+-   Early selection in breeding programs
+-   Reduction of time-to-phenotyping in quality traits
+-   Integration into metabolomics-assisted selection pipelines
 
 ### Tools
 
